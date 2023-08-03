@@ -1,0 +1,54 @@
+.sidenav {
+  padding: 14px 0;
+  background-color: var(--surface-overlay);
+  width: 250px;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  margin-top: 28px;
+  padding: 7px 14px 28px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 0.25rem;
+}
+
+.nav-item a {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: box-shadow 0.2s;
+
+  &:is(:link, :visited) {
+    color: initial;
+  }
+
+  &:hover {
+    background-color: var(--surface-hover);
+  }
+
+  &:focus {
+    box-shadow: inset var(--focus-ring);
+  }
+
+  &.router-link-active {
+    background-color: #eff6ff;
+    color: #1d4ed8 !important;
+  }
+}

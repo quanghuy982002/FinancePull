@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.flex-column {
+  flex: 1;
+  padding: 2rem 4rem;
+  overflow: hidden scroll;
+}

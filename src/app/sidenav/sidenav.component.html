@@ -1,0 +1,18 @@
+<div class="sidenav">
+  <a [routerLink]="['/']" class="logo">
+    <img
+      alt="logo"
+      [src]="
+        'https://primefaces.org/cdn/primeng/images/' + 'primeng-logo-dark.svg'
+      "
+      height="41"
+    />
+  </a>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-item" *ngFor="let item of menu">
+        <a href="{{ item.url }}">{{ item.name }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
