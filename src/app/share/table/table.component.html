@@ -1,0 +1,26 @@
+<div class="grid center flex justify-content-center m-5">
+    <p-table [value]="products" [paginator]="true" [rows]="rows" [showCurrentPageReport]="true" [(first)]="first"  styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="caption"> List of Products </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+                <td>{{ product.code }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>
+                    <i role="button" class="pi pi-file-edit m-2"></i>
+                    <i role="button" class="pi pi-trash m-2"></i>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

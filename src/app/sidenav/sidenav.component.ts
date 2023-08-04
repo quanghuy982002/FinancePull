@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class SidenavComponent {
   menu = [
-    { name: 'Item 1', url: '#' },
+    { name: 'Galleria', url: '/galleria' },
     { name: 'PickList', url: '/picklist' },
+    { name: 'Table', url: '/table' },
   ];
 }

@@ -1,0 +1,13 @@
+<div class="card grid flex justify-content-center m-5">
+    <p-galleria [value]="images" [showIndicators]="true" [showThumbnails]="false"
+        [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px' }">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <ng-template pTemplate="caption" let-item>
+            <div style="text-align: center">
+                <p>{{item.alt}}</p>
+            </div>
+        </ng-template>
+    </p-galleria>
+</div>
