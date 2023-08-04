@@ -7,19 +7,32 @@ import { GalleriaModule } from 'primeng/galleria';
 import { TableModule } from 'primeng/table';
 import { GalleriaComponent } from './galleria/galleria.component';
 import { TableComponent } from './table/table.component';
+import { UploadComponent } from './upload/upload.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FileUploadModule } from 'primeng/fileupload';
+import { ToastModule } from 'primeng/toast';
 @NgModule({
   declarations: [
     PickListComponent,
     GalleriaComponent,
-    TableComponent
+    TableComponent,
+    UploadComponent
   ],
   imports: [
     CommonModule,
     PickListModule,
     GalleriaModule,
     TableModule,
+    HttpClientModule,
+    FileUploadModule,
+    ToastModule
+
   ],
-  exports: [PickListComponent, GalleriaComponent, TableComponent],
+  exports: [PickListComponent, 
+            GalleriaComponent, 
+            TableComponent, 
+            UploadComponent
+  ],
 })
 export class ShareModule { }
