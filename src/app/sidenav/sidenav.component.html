@@ -11,7 +11,11 @@
   <nav>
     <ul class="nav-list">
       <li class="nav-item" *ngFor="let item of menu">
-        <a [routerLink]="item.url" [routerLinkActive]="['router-link-active']">{{ item.name }}</a>
+        <a
+          [routerLink]="item.url"
+          [routerLinkActive]="['router-link-active']"
+          >{{ item.name }}</a
+        >
       </li>
     </ul>
   </nav>
