@@ -26,6 +26,8 @@ import { TreeTableModule } from 'primeng/treetable';
 import { MenuComponent } from './menu/menu.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { OrderListComponent } from './order-list/order-list.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { DividerModule } from 'primeng/divider';
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import { OrderListComponent } from './order-list/order-list.component';
     MenuComponent,
     OrgtreeComponent,
     OrderListComponent,
+    AccordionComponent,
   ],
   imports: [
     CommonModule,
@@ -61,6 +64,7 @@ import { OrderListComponent } from './order-list/order-list.component';
     TabMenuModule,
     OrderListModule,
     TagModule,
+    DividerModule,
   ],
   exports: [
     PickListComponent,
@@ -70,6 +74,7 @@ import { OrderListComponent } from './order-list/order-list.component';
     MenuComponent,
     DataViewComponent,
     OrderListComponent,
+    AccordionModule,
   ],
 })
 export class ShareModule {}
