@@ -1,0 +1,30 @@
+<div class="card flex justify-content-center overflow-x-auto">
+  <p-organizationChart [value]="data">
+    <ng-template let-node pTemplate="person">
+      <div class="p-2 text-center">
+        <img [src]="node.data.image" class="mb-3 w-3rem h-3rem" />
+        <div class="card flex justify-content-center">
+          <p-accordion [activeIndex]="0">
+            <p-accordionTab header="{{ node.data.name }}">
+              <p-treeTable [scrollable]="true">
+                <ng-template pTemplate="header">
+                  <table>
+                    <tr>
+                      <th>Title</th>
+                      <th>Details</th>
+                    </tr>
+                    <tr>
+                      <td>{{ node.data.title }}</td>
+                      <td>{{ node.data.information }}</td>
+                    </tr>
+                  </table>
+                </ng-template>
+              </p-treeTable>
+            </p-accordionTab>
+          </p-accordion>
+        </div>
+        <div>{{ node.data.title }}</div>
+      </div>
+    </ng-template>
+  </p-organizationChart>
+</div>

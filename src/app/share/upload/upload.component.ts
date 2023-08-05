@@ -4,7 +4,7 @@ import { MessageService } from 'primeng/api';
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
-  styleUrls: ['./upload.component.scss']
+  styleUrls: ['./upload.component.scss'],
 })
 export class UploadComponent {
   uploadedFiles: any[] = [];
@@ -16,6 +16,10 @@ export class UploadComponent {
       this.uploadedFiles.push(file);
     }
 
-      this.messageService.add({severity: 'info', summary: 'File Uploaded', detail: ''});
+    this.messageService.add({
+      severity: 'info',
+      summary: 'File Uploaded',
+      detail: '',
+    });
   }
 }

@@ -9,10 +9,7 @@ import { ShareModule } from './share/share.module';
 import { MessageService } from 'primeng/api';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidenavComponent
-  ],
+  declarations: [AppComponent, SidenavComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
