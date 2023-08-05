@@ -28,7 +28,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { OrderListComponent } from './order-list/order-list.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { DividerModule } from 'primeng/divider';
-
+import { SplitterComponent } from './splitter/splitter.component';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [
@@ -41,18 +42,17 @@ import { DividerModule } from 'primeng/divider';
     OrgtreeComponent,
     OrderListComponent,
     AccordionComponent,
+    SplitterComponent,
   ],
   imports: [
     CommonModule,
     TableModule,
     DataViewModule,
     RatingModule,
-    TagModule,
     FormsModule,
     ButtonModule,
     PickListModule,
     GalleriaModule,
-    TableModule,
     HttpClientModule,
     FileUploadModule,
     ToastModule,
@@ -63,6 +63,7 @@ import { DividerModule } from 'primeng/divider';
     OrderListModule,
     TagModule,
     DividerModule,
+    SplitterModule
   ],
   exports: [
     PickListComponent,

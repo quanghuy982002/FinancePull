@@ -16,5 +16,6 @@ export class SidenavComponent {
     { name: 'PickList', url: '/picklist' },
     { name: 'Table', url: '/table' },
     { name: 'Upload Img', url: '/upload' },
+    { name: 'Splitter Img', url: '/splitter'}
   ];
 }
