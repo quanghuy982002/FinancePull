@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DataViewComponent } from './data-view/data-view.component';
 import { PickListComponent } from './pick-list/pick-list.component';
 
+import { FormsModule } from '@angular/forms';
+import { DataViewModule, DataViewLayoutOptions } from 'primeng/dataview';
+import { RatingModule } from 'primeng/rating';
+import { TagModule } from 'primeng/tag';
+import { ButtonModule } from 'primeng/button';
 import { PickListModule } from 'primeng/picklist';
 import { GalleriaModule } from 'primeng/galleria';
 import { TableModule } from 'primeng/table';
@@ -22,6 +28,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
 
 @NgModule({
   declarations: [
+    DataViewComponent,
     PickListComponent,
     GalleriaComponent,
     TableComponent,
@@ -32,6 +39,12 @@ import { TabMenuModule } from 'primeng/tabmenu';
   ],
   imports: [
     CommonModule,
+    TableModule,
+    DataViewModule,
+    RatingModule,
+    TagModule,
+    FormsModule,
+    ButtonModule,
     PickListModule,
     GalleriaModule,
     TableModule,
@@ -49,6 +62,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
     TableComponent,
     UploadComponent,
     MenuComponent,
+    DataViewComponent,
   ],
 })
 export class ShareModule {}
