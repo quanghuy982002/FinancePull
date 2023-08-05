@@ -4,13 +4,14 @@ import { DataViewComponent } from './data-view/data-view.component';
 import { PickListComponent } from './pick-list/pick-list.component';
 
 import { FormsModule } from '@angular/forms';
-import { DataViewModule, DataViewLayoutOptions } from 'primeng/dataview';
+import { DataViewModule } from 'primeng/dataview';
 import { RatingModule } from 'primeng/rating';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
 import { PickListModule } from 'primeng/picklist';
 import { GalleriaModule } from 'primeng/galleria';
 import { TableModule } from 'primeng/table';
+import { OrderListModule } from 'primeng/orderlist';
 import { GalleriaComponent } from './galleria/galleria.component';
 import { TableComponent } from './table/table.component';
 import { UploadComponent } from './upload/upload.component';
@@ -24,6 +25,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { TreeTableModule } from 'primeng/treetable';
 import { MenuComponent } from './menu/menu.component';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { OrderListComponent } from './order-list/order-list.component';
 
 
 @NgModule({
@@ -32,10 +34,12 @@ import { TabMenuModule } from 'primeng/tabmenu';
     PickListComponent,
     GalleriaComponent,
     TableComponent,
+    TableComponent,
     UploadComponent,
     TableComponent,
     MenuComponent,
     OrgtreeComponent,
+    OrderListComponent,
   ],
   imports: [
     CommonModule,
@@ -55,6 +59,8 @@ import { TabMenuModule } from 'primeng/tabmenu';
     AccordionModule,
     TreeTableModule,
     TabMenuModule,
+    OrderListModule,
+    TagModule,
   ],
   exports: [
     PickListComponent,
@@ -63,6 +69,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
     UploadComponent,
     MenuComponent,
     DataViewComponent,
+    OrderListComponent,
   ],
 })
 export class ShareModule {}

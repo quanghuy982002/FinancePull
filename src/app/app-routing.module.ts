@@ -7,6 +7,7 @@ import { GalleriaComponent } from './share/galleria/galleria.component';
 import { UploadComponent } from './share/upload/upload.component';
 import { OrgtreeComponent } from './share/orgtree/orgtree.component';
 import { MenuComponent } from './share/menu/menu.component';
+import { OrderListComponent } from './share/order-list/order-list.component';
 
 const routes: Routes = [
   { path: 'dataview', component: DataViewComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'upload', component: UploadComponent },
   { path: 'orgtree', component: OrgtreeComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'orderlist', component: OrderListComponent}
 ];
 
 @NgModule({
