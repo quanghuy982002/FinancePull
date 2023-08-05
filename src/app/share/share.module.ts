@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { DataViewModule } from 'primeng/dataview';
 import { RatingModule } from 'primeng/rating';
 import { TagModule } from 'primeng/tag';
@@ -17,7 +16,8 @@ import { AccordionModule } from 'primeng/accordion';
 import { TreeTableModule } from 'primeng/treetable';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { DividerModule } from 'primeng/divider';
-
+import { SplitterComponent } from './splitter/splitter.component';
+import { SplitterModule } from 'primeng/splitter';
 import { DataViewComponent } from './data-view/data-view.component';
 import { PickListComponent } from './pick-list/pick-list.component';
 import { FileUploadModule } from 'primeng/fileupload';
@@ -29,31 +29,29 @@ import { MenuComponent } from './menu/menu.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { AccordionComponent } from './accordion/accordion.component';
 
+
 @NgModule({
   declarations: [
     DataViewComponent,
     PickListComponent,
     GalleriaComponent,
-    TableComponent,
-    TableComponent,
     UploadComponent,
     TableComponent,
     MenuComponent,
     OrgtreeComponent,
     OrderListComponent,
     AccordionComponent,
+    SplitterComponent,
   ],
   imports: [
     CommonModule,
     TableModule,
     DataViewModule,
     RatingModule,
-    TagModule,
     FormsModule,
     ButtonModule,
     PickListModule,
     GalleriaModule,
-    TableModule,
     HttpClientModule,
     FileUploadModule,
     ToastModule,
@@ -64,6 +62,7 @@ import { AccordionComponent } from './accordion/accordion.component';
     OrderListModule,
     TagModule,
     DividerModule,
+    SplitterModule
   ],
   exports: [
     PickListComponent,
