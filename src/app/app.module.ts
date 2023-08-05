@@ -6,19 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ShareModule } from './share/share.module';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidenavComponent
-  ],
+  declarations: [AppComponent, SidenavComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ShareModule
+    ShareModule,
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
