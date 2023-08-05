@@ -19,13 +19,28 @@ import { UploadComponent } from './upload/upload.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ToastModule } from 'primeng/toast';
+import { OrgtreeComponent } from './orgtree/orgtree.component';
+import { OrganizationChartModule } from 'primeng/organizationchart';
+import { AccordionModule } from 'primeng/accordion';
+import { TreeTableModule } from 'primeng/treetable';
+import { MenuComponent } from './menu/menu.component';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { OrderListComponent } from './order-list/order-list.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { DividerModule } from 'primeng/divider';
+
+
 @NgModule({
   declarations: [
     DataViewComponent,
     PickListComponent,
     GalleriaComponent,
+    UploadComponent,
     TableComponent,
-    UploadComponent
+    MenuComponent,
+    OrgtreeComponent,
+    OrderListComponent,
+    AccordionComponent,
   ],
   imports: [
     CommonModule,
@@ -40,13 +55,23 @@ import { ToastModule } from 'primeng/toast';
     TableModule,
     HttpClientModule,
     FileUploadModule,
-    ToastModule
-
+    ToastModule,
+    OrganizationChartModule,
+    AccordionModule,
+    TreeTableModule,
+    TabMenuModule,
+    OrderListModule,
+    TagModule,
+    DividerModule,
   ],
-  exports: [PickListComponent, 
-            GalleriaComponent, 
-            TableComponent, 
-            UploadComponent
+  exports: [
+    PickListComponent,
+    GalleriaComponent,
+    TableComponent,
+    UploadComponent,
+    MenuComponent,
+    DataViewComponent,
+    OrderListComponent,
   ],
 })
 export class ShareModule {}

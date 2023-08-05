@@ -8,8 +8,10 @@ import { UploadComponent } from './share/upload/upload.component';
 import { OrgtreeComponent } from './share/orgtree/orgtree.component';
 import { MenuComponent } from './share/menu/menu.component';
 import { OrderListComponent } from './share/order-list/order-list.component';
+import { AccordionComponent } from './share/accordion/accordion.component';
 
 const routes: Routes = [
+  { path: 'accordion', component: AccordionComponent },
   { path: 'dataview', component: DataViewComponent },
   { path: 'galleria', component: GalleriaComponent },
   { path: 'picklist', component: PickListComponent },
@@ -17,7 +19,7 @@ const routes: Routes = [
   { path: 'upload', component: UploadComponent },
   { path: 'orgtree', component: OrgtreeComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'orderlist', component: OrderListComponent}
+  { path: 'orderlist', component: OrderListComponent },
 ];
 
 @NgModule({

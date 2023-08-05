@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class SidenavComponent {
   menu = [
+    { name: 'Accordion', url: '/accordion' },
     { name: 'DataView', url: '/dataview' },
     { name: 'Galleria', url: '/galleria' },
     { name: 'Menu', url: '/menu' },
