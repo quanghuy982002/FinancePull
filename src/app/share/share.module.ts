@@ -73,7 +73,7 @@ import { AccordionComponent } from './accordion/accordion.component';
     MenuComponent,
     DataViewComponent,
     OrderListComponent,
-    AccordionModule,
+    AccordionComponent,
   ],
 })
 export class ShareModule {}
