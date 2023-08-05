@@ -12,12 +12,13 @@ import { UploadComponent } from './upload/upload.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ToastModule } from 'primeng/toast';
+
 @NgModule({
   declarations: [
     PickListComponent,
     GalleriaComponent,
     TableComponent,
-    UploadComponent
+    UploadComponent,
   ],
   imports: [
     CommonModule,
@@ -26,13 +27,13 @@ import { ToastModule } from 'primeng/toast';
     TableModule,
     HttpClientModule,
     FileUploadModule,
-    ToastModule
-
+    ToastModule,
   ],
-  exports: [PickListComponent, 
-            GalleriaComponent, 
-            TableComponent, 
-            UploadComponent
+  exports: [
+    PickListComponent,
+    GalleriaComponent,
+    TableComponent,
+    UploadComponent,
   ],
 })
-export class ShareModule { }
+export class ShareModule {}
