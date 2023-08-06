@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class SidenavComponent {
   menu = [
     { name: 'Accordion', url: '/accordion' },
+    { name: 'Carousel', url: '/carousel' },
     { name: 'DataView', url: '/dataview' },
     { name: 'Galleria', url: '/galleria' },
+    { name: 'Image', url: '/image' },
     { name: 'Menu', url: '/menu' },
     { name: 'Orderlist', url: '/orderlist' },
     { name: 'PickList', url: '/picklist' },

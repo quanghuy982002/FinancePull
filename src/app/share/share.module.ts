@@ -16,6 +16,8 @@ import { AccordionModule } from 'primeng/accordion';
 import { TreeTableModule } from 'primeng/treetable';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { DividerModule } from 'primeng/divider';
+import { ImageModule } from 'primeng/image';
+import { CarouselModule } from 'primeng/carousel';
 import { SplitterComponent } from './splitter/splitter.component';
 import { SplitterModule } from 'primeng/splitter';
 import { DataViewComponent } from './data-view/data-view.component';
@@ -28,6 +30,8 @@ import { OrgtreeComponent } from './orgtree/orgtree.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ImageComponent } from './image/image.component';
 
 
 @NgModule({
@@ -42,6 +46,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     OrderListComponent,
     AccordionComponent,
     SplitterComponent,
+    CarouselComponent,
+    ImageComponent,
   ],
   imports: [
     CommonModule,
@@ -62,7 +68,9 @@ import { AccordionComponent } from './accordion/accordion.component';
     OrderListModule,
     TagModule,
     DividerModule,
-    SplitterModule
+    SplitterModule,
+    ImageModule,
+    CarouselModule,
   ],
   exports: [
     PickListComponent,
@@ -73,6 +81,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     DataViewComponent,
     OrderListComponent,
     AccordionComponent,
+    ImageComponent,
+    CarouselComponent,
   ],
 })
 export class ShareModule {}
